@@ -20,6 +20,8 @@
     .message {
       max-width: 440px;
 
+      animation: slideIn 0.7s ease;
+
       &:nth-child(2) {
         margin-left: 80px;
       }
@@ -54,5 +56,17 @@
         }
       }
     }
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

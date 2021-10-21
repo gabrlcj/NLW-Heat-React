@@ -9,6 +9,8 @@
   text-align: center;
 
   position: relative;
+
+  animation: fade 1s ease forwards;
 }
 
 .signOutButton {
@@ -122,5 +124,17 @@
     &:hover {
       filter: brightness(0.85);
     }
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
